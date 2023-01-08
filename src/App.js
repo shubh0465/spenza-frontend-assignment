@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import WorldMap from "react-svg-worldmap"
+import {WorldMap} from "react-svg-worldmap"
 // import MainComponent from './Component/MainComponent';
 
 function App(){
@@ -18,13 +18,13 @@ function App(){
   ];
   return (
     <div className="App">
-      <WorldMap
+      <WorldMap 
         color="red"
-        title="Top 10 Populous Countries"
-        value-suffix="people"
-        size="lg"
-        data={data}
-       />
+        title="Custom Style Test" 
+        valueSuffix="points" 
+        size="lg" 
+        data={data} 
+      />
     </div>
   );
 }
